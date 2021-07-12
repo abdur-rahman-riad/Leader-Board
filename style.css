@@ -1,10 +1,18 @@
+/*------------------------------- 
+        Common Design 
+-------------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+section{
+    margin-top: 25px;
 }
 .container{
     background-color: white;
@@ -16,8 +24,11 @@ hr{
     border: 1px solid #D1D1D1;
     margin: 30px 0;
 }
-/* Top Players Design */
-.players-title{
+
+/*------------------------------- 
+        Top Players Design 
+-------------------------------*/
+.section-title{
     color: #562EFF;
     font-size: 24px;
     margin-top: 3px;
@@ -39,4 +50,39 @@ hr{
 .player-name{
     margin-left: 16px;
     font-size: 18px;
+}
+
+/*------------------------------- 
+        Top Blogs Design 
+-------------------------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 18px;
+}
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-blogs .thumbnail img{
+    width: 180px;
+    height: 110px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+    margin: 5px;
+}
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 16px;
 }
