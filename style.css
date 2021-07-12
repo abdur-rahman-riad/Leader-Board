@@ -12,7 +12,7 @@ main{
     align-items: center;
 }
 section{
-    margin-top: 25px;
+    margin:20px 0;
 }
 .container{
     background-color: white;
@@ -85,4 +85,58 @@ hr{
     text-decoration: none;
     color: #562EFF;
     font-size: 16px;
+}
+/*------------------------------- 
+        Latest Courses Design 
+-------------------------------*/
+.courses{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 15px;
+}
+.course{
+    box-shadow: 3px 3px 12px #c5c4c4;
+    padding: 15px;
+    height: 280px;
+    width: 250px;
+    margin: 0 18px;
+    border-radius: 8px;
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-title{
+    font-size: 16px;
+}
+.course-author{
+    color: #ED6B4F;
+    font-size: 14px;
+}
+.rate-star{
+    color: #FFC014;
+    font-size: 14px;
+}
+span{
+    color: #A2A2A2;
+    font-size: 14px;
+}
+.course-duration{
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+footer p{
+    text-align: center;
+    color: gray;
 }
