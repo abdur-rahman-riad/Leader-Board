@@ -19,6 +19,7 @@ section{
     width: 870px;
     border-radius: 8px;
     padding: 30px;
+    box-shadow: 1px 1px 3px #e7e5e5;
 }
 hr{
     border: 1px solid #D1D1D1;
@@ -74,7 +75,7 @@ hr{
     margin-left: 16px;
 }
 .blog-title{
-    font-size: 20px;
+    font-size: 16px;
     margin: 5px;
 }
 .blog-author{
@@ -140,3 +141,46 @@ footer p{
     text-align: center;
     color: gray;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        box-shadow: 2px 2px 12px #c5c4c4;
+        border-radius: 10px;
+    }
+    .top-blogs .thumbnail img{
+        width: 280px;
+        height: 160px;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .course{
+        box-shadow: 3px 3px 12px #c5c4c4;
+        padding: 15px;
+        height: 280px;
+        width: 250px;
+        margin: 15px 0;
+        border-radius: 8px;
+    }
+    .course-banner img{
+        width: 250px;
+        height: 104px;
+    }
+  }
